@@ -1,0 +1,16 @@
+package com.eventful.client;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(value=HttpStatus.NOT_FOUND)
+public class EventNotFoundException extends RuntimeException{
+
+
+	private static final long serialVersionUID = -4149417725346542793L;
+
+	public EventNotFoundException(String message)
+	{
+		super(message);
+	}
+}
